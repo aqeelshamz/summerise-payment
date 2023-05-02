@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment | Summerise Moral School 2023</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+      }
+      button {
+        cursor: pointer;
+        padding: 10px 40px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        background: dodgerblue;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgb(99, 162, 226);
+        transition: all 0.3s ease;
+        margin-top: 50px;
+      }
+      button:hover {
+        box-shadow: 0 7px 15px rgb(99, 162, 226);
+      }
+      img {
+        width: 100%;
+        max-width: 300px;
+      }
+      #logo {
+        width: 100%;
+        max-width: 400px;
+      }
+    </style>
+    <script>
+      function pay() {
+        window.open(
+          "upi://pay?pa=hishamnf4@okaxis&pn=Wisdom%20Students%20Pavaratty&tn=Summarize%20Registration%20&cu=INR&am=120"
+        );
+        window.close();
+      }
+    </script>
+  </head>
+  <body>
+    <!-- upi://pay?pa=hishamnf4@okaxis&pn=Wisdom%20Students%20Pavaratty&tn=Summarize%20Registration%20&cu=INR&am=120 -->
+    <img id="logo" src="logo.png" />
+    <img src="qrcode.png" />
+    <button onclick="pay()">Pay now</button>
+  </body>
+</html>
