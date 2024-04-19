@@ -44,12 +44,13 @@
       #logo {
         width: 100%;
         max-width: 400px;
+        margin-bottom: 10px;
       }
     </style>
     <script>
       function pay() {
         window.open(
-          "upi://pay?pa=myaseenasif@oksbi&pn=Wisdom%20Students%20Pavaratty&tn=Summerise%20Registration%20Fee%20&cu=INR&am=120"
+          "upi://pay?pa=myaseenasif@oksbi&pn=Wisdom%20Students%20Pavaratty&tn=Summerise%20Registration%20Fee%20&cu=INR&am=150"
         );
         window.close();
       }
@@ -58,7 +59,7 @@
   <body>
     <img id="logo" src="logo.png" />
     <img src="qrcode.png" />
-    <p style="margin-top: 20px; font-size: 1.2rem; font-weight: bold;">Registration Fee: ₹120</p>
+    <p style="margin-top: 20px; font-size: 1.2rem; font-weight: bold;">Registration Fee: ₹150</p>
     <button onclick="pay()">Pay now</button>
   </body>
 </html>
